@@ -1,0 +1,12 @@
+
+<form method='POST' action="{% url 'index' %}" encrypt='multipart/form-data'>
+
+    {% csrf_token %}
+    value:<br />
+    <input type='number' name='value' />
+    <br>
+    <h3>{{ans}}</h3>
+    
+    
+    <input class='btn btn-primary' type='submit' value='ans' /><br /><br />
+    </form>
